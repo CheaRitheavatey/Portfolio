@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chea Ritheavatey Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -18,7 +19,159 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header-text">
+                <p>ICT Major</p>
+                <h1>Hi, I am <span>Chea Ritheavatey</span><br>from Cambodia</h1>
+            </div>
         </div>
     </div>
+    <!-- ----------------------- about start ------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image3.jpg" alt="My photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A dedicated and motivated student seeking to leverage my achievements and broaden my horizon through valuable experiences. With a strong commitment to academics, I aspire to make a meaningful impact in my chosen field and become a better version of myself.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experiences')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>work with API and creating simple GUI</li>
+                            <li><span>Python</span><br>Create simple games and designing Interfaces</li>
+                            <li><span>Web Developement</span><br>Designing Web Interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>NTU PEAK ASEAN</span><br>work with API and creating simple GUI</li>
+                            <li><span>BONDOUL</span><br>Create simple games and designing Interfaces</li>
+                            <li><span>Web Developement</span><br>Designing Web Interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BERKELEY INTERNATIONAL SCHOOL</span><br>work with API and creating simple GUI</li>
+                            <li><span>Python</span><br>Create simple games and designing Interfaces</li>
+                            <li><span>Web Developement</span><br>Designing Web Interfaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------- about end --------------------------- -->
+
+    <!-- ------------------- service start------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>discription for the first service</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>discription for the first service</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>discription for the first service</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------ service end ----------------------------- -->
+
+    <!-- ------------------- portfoilo start---------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects Hightlight</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/project1.png" alt="project 1">
+                    <div class="layer">
+                        <h3>Sign Language Detection</h3>
+                        <p>description about this project give a simple detail</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project2.png" alt="project 2">
+                    <div class="layer">
+                        <h3>Typing Game Test</h3>
+                        <p>description about this project give a simple detail</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project3.png" alt="project 3">
+                    <div class="layer">
+                        <h3>Weather API on terminal</h3>
+                        <p>description about this project give a simple detail</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" href="#">see more</a>
+        </div>
+    </div>
+      <!-- ------------------- portfoilo end---------------------- -->
+            <!-- ------------------- contact start---------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>Email: ritheavatey@gmail.com</p>
+                    <p>Phone: (+855) 89-838-743</p>
+                    <p>Telegram: @Ritheavatey</p>
+                    <a href="images/Chea Ritheavatey CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; Ritheavatey</p>
+            </div>
+        </div>
+    </div>
+                  <!-- ------------------- contact start---------------------- -->
+    <script>
+        var tablink = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(i of tablink) {
+                i.classList.remove("active-link")
+            }
+
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
 </body>
 </html>
