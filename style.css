@@ -317,7 +317,8 @@ form input, form textarea{
 
 }
 
-form button {
+form button.btn.btn2 {
+    background: #c4ad9d;
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
