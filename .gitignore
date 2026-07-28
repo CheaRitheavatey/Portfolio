@@ -25,4 +25,4 @@ dist-ssr
 
 
 .env
-/image_folder/*
+public/image_folder/*
