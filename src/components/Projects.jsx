@@ -15,21 +15,21 @@ const Projects = () => {
       description: "A real-time sign language to subtitle system using computer vision and LLM (SEA-LION) for instant translation to English. Designed for ed-tech accessibility.",
       tech: ["Python", "LSTM", "Computer Vision"],
       github: "https://chearitheavatey.github.io/signlanguage-to-subtitle-converter/",
-      image: "images/project2.png"
+      image: "image_folder/project2.png"
     },
     {
       title: "Cambodia Tourism Website",
       description: "A full-stack travel showcase responsive website presenting Cambodia’s attractions through interactive galleries using an MVC architecture.",
       tech: ["HTML", "CSS", "JavaScript", "PHP"],
       github: "https://explore-cambodia.netlify.app/",
-      image: "images/project3.png"
+      image: "image_folder/project3.png"
     },
     {
       title: "Cambodia Travel App Prototype",
       description: "",
       tech: ["HTML", "CSS", "JavaScript", "React"],
       github: "https://explore-cambodia.netlify.app/",
-      image: "images/project3.png"
+      image: "image_folder/project3.png"
     }
   ];
 
