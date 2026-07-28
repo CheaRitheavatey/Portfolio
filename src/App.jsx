@@ -8,7 +8,6 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Background ambient glows */}
       <div className="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary/10 blur-[120px] pointer-events-none" />
       <div className="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-secondary/10 blur-[120px] pointer-events-none" />
       

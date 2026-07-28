@@ -7,22 +7,29 @@ const Projects = () => {
       title: "E-Commerce for Cambodia's Products",
       description: "A full-stack e-commerce platform enabling local producers to showcase products online. Includes an automated product upload via a Telegram bot.",
       tech: ["Spring Boot", "React", "PostgreSQL"],
-      github: "https://github.com",
-      image: "/project1.png"
+      github: "https://chearitheavatey.github.io/ecomBetterNotFlop/",
+      image: "images/project1.png"
     },
     {
       title: "Sign Language to Subtitle Converter",
       description: "A real-time sign language to subtitle system using computer vision and LLM (SEA-LION) for instant translation to English. Designed for ed-tech accessibility.",
       tech: ["Python", "LSTM", "Computer Vision"],
-      github: "https://github.com",
-      image: "/project2.png"
+      github: "https://chearitheavatey.github.io/signlanguage-to-subtitle-converter/",
+      image: "images/project2.png"
     },
     {
       title: "Cambodia Tourism Website",
       description: "A full-stack travel showcase responsive website presenting Cambodia’s attractions through interactive galleries using an MVC architecture.",
       tech: ["HTML", "CSS", "JavaScript", "PHP"],
-      github: "https://github.com",
-      image: "/project3.png"
+      github: "https://explore-cambodia.netlify.app/",
+      image: "images/project3.png"
+    },
+    {
+      title: "Cambodia Travel App Prototype",
+      description: "",
+      tech: ["HTML", "CSS", "JavaScript", "React"],
+      github: "https://explore-cambodia.netlify.app/",
+      image: "images/project3.png"
     }
   ];
 
@@ -40,7 +47,6 @@ const Projects = () => {
               <div className="absolute inset-0 bg-primary/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-300 z-10"></div>
               {/* Fallback gradient if image not found */}
               <div className="w-full h-full bg-surface">
-                {/* We'll use the image from public folder if moved there, else it falls back to the bg-surface */}
                 <img src={project.image} alt={project.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" onError={(e) => { e.target.style.display = 'none'; }} />
               </div>
             </div>
@@ -62,10 +68,10 @@ const Projects = () => {
               </div>
               
               <div className="flex gap-4 mt-auto">
-                <a href={project.github} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary transition-colors">
+                {/* <a href={project.github} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary transition-colors">
                   <Github size={20} />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-primary transition-colors">
+                </a> */}
+                <a href={project.github} className="text-gray-400 hover:text-primary transition-colors">
                   <ExternalLink size={20} />
                 </a>
               </div>

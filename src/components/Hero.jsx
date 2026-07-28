@@ -12,10 +12,10 @@ const Hero = () => {
           Hi, I'm <span className="text-gradient">Chea Rithea Vatey</span>
         </h1>
         <h2 className="text-2xl md:text-3xl text-gray-400 font-medium mb-8">
-          Computer Science & Entrepreneur Enthusiast
+          Technology-focused Computer Science Student
         </h2>
         <p className="text-gray-400 text-lg mb-10 max-w-2xl leading-relaxed">
-          A dedicated and motivated student seeking to leverage my achievements and broaden my horizon through valuable experiences. With a strong commitment to academics, I aspire to make a meaningful impact in my chosen field.
+          Experienced in software engineering, artificial intelligence, and venture capital analysis. Skilled in developing AI-driven applications while evaluating emerging technologies and startup opportunities. Passionate about leveraging technology to create scalable solutions with meaningful social impact.
         </p>
         
         <div className="flex flex-wrap gap-4 items-center">
@@ -26,8 +26,11 @@ const Hero = () => {
             View Projects <ArrowRight size={18} />
           </a>
           <div className="flex items-center gap-4 ml-4">
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="p-3 glass-card text-gray-400 hover:text-primary transition-colors">
+            <a href="https://github.com/CheaRitheavatey" target="_blank" rel="noreferrer" className="p-3 glass-card text-gray-400 hover:text-primary transition-colors">
               <Github size={20} />
+            </a>
+            <a href="https://www.linkedin.com/in/ritheavatey-chea-74456a2b5/" target="_blank" rel="noreferrer" className="p-3 glass-card text-gray-400 hover:text-primary transition-colors">
+              <Linkedin size={20} />
             </a>
             <a href="mailto:ritheavateychea@gmail.com" className="p-3 glass-card text-gray-400 hover:text-primary transition-colors">
               <Mail size={20} />

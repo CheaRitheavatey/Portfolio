@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Send } from 'lucide-react';
+import { Mail, Send, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -47,6 +47,21 @@ const Contact = () => {
         I'm currently looking for new opportunities and my inbox is always open. 
         Whether you have a question or just want to say hi, I'll try my best to get back to you!
       </p>
+
+      <div className="flex flex-wrap justify-center gap-8 mb-10 text-gray-400">
+        <div className="flex items-center gap-2">
+          <Mail size={18} className="text-primary" />
+          <span>ritheavateychea@gmail.com</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <Phone size={18} className="text-primary" />
+          <span>+36705646692</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <MapPin size={18} className="text-primary" />
+          <span>Pécs, Hungary</span>
+        </div>
+      </div>
 
       <form onSubmit={handleSubmit} className="glass-card p-8 text-left max-w-2xl mx-auto flex flex-col gap-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
