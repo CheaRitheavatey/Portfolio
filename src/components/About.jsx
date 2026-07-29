@@ -39,17 +39,30 @@ const About = () => {
               <Briefcase size={20} className="text-primary" /> Experience
             </h3>
             <div className="space-y-4">
-              <div>
-                <h4 className="font-medium text-gray-300">Technology Analyst @ Match VC</h4>
-                <p className="text-sm text-primary">Feb 2026 - Present</p>
+              <div className="mb-6">
+                <h4 className="font-medium text-gray-300 text-lg">Technology Analyst @ Match VC</h4>
+                <p className="text-sm text-primary mb-2">Feb 2026 - Present</p>
+                <ul className="text-sm text-gray-400 list-disc list-outside ml-4 space-y-1">
+                  <li>Evaluated AI startups and emerging technologies across Europe and Southeast Asia.</li>
+                  <li>Conducted technical due diligence on software products, AI infrastructure, and engineering teams.</li>
+                  <li>Prepared investment research reports covering market trends and competitive positioning.</li>
+                </ul>
               </div>
-              <div>
-                <h4 className="font-medium text-gray-300">DT Excellence Center Intern @ Deutsche Telekom IT</h4>
-                <p className="text-sm text-primary">Sept - Dec 2025</p>
+              <div className="mb-6">
+                <h4 className="font-medium text-gray-300 text-lg">DT Excellence Center Intern @ Deutsche Telekom IT</h4>
+                <p className="text-sm text-primary mb-2">Sept - Dec 2025</p>
+                <ul className="text-sm text-gray-400 list-disc list-outside ml-4 space-y-1">
+                  <li>Designed a Microsoft Teams chatbot for one-click and multi-step surveys.</li>
+                  <li>Implemented an end-to-end survey flow prototype using Python and external voting APIs.</li>
+                </ul>
               </div>
-              <div>
-                <h4 className="font-medium text-gray-300">Project Intern @ Ministry of Post and Communication</h4>
-                <p className="text-sm text-primary">Jun 2025 - Aug 2025</p>
+              <div className="mb-2">
+                <h4 className="font-medium text-gray-300 text-lg">Project Intern @ Ministry of Post & Communication</h4>
+                <p className="text-sm text-primary mb-2">Jun 2025 - Aug 2025</p>
+                <ul className="text-sm text-gray-400 list-disc list-outside ml-4 space-y-1">
+                  <li>Conducted field research and factory visits with 8 local producers to design visibility solutions.</li>
+                  <li>Published awareness articles on Takeo products, increasing public interest and support.</li>
+                </ul>
               </div>
             </div>
           </div>

@@ -8,28 +8,32 @@ const Projects = () => {
       description: "A full-stack e-commerce platform enabling local producers to showcase products online. Includes an automated product upload via a Telegram bot.",
       tech: ["Spring Boot", "React", "PostgreSQL"],
       github: "https://chearitheavatey.github.io/ecomBetterNotFlop/",
-      image: "images/project1.png"
+      mediaType: "youtube",
+      mediaSrc: "https://www.youtube.com/embed/PLdFL_5gT0s?autoplay=1&mute=1&loop=1&playlist=PLdFL_5gT0s"
     },
     {
       title: "Sign Language to Subtitle Converter",
       description: "A real-time sign language to subtitle system using computer vision and LLM (SEA-LION) for instant translation to English. Designed for ed-tech accessibility.",
       tech: ["Python", "LSTM", "Computer Vision"],
       github: "https://chearitheavatey.github.io/signlanguage-to-subtitle-converter/",
-      image: "image_folder/project2.png"
+      mediaType: "youtube",
+      mediaSrc: "https://www.youtube.com/embed/2CLyPytsZwk?start=120&autoplay=1&mute=1&loop=1&playlist=2CLyPytsZwk"
     },
     {
       title: "Cambodia Tourism Website",
       description: "A full-stack travel showcase responsive website presenting Cambodia’s attractions through interactive galleries using an MVC architecture.",
       tech: ["HTML", "CSS", "JavaScript", "PHP"],
       github: "https://explore-cambodia.netlify.app/",
-      image: "image_folder/project3.png"
+      mediaType: "youtube",
+      mediaSrc: "https://www.youtube.com/embed/VdMIhoYYaDs?autoplay=1&mute=1&loop=1&playlist=VdMIhoYYaDs"
     },
     {
       title: "Cambodia Travel App Prototype",
-      description: "",
+      description: "An innovative travel app designed to help travelers discover unique and low-key spots in Cambodia often missed by tourists. It features a detailed local map, a curated list of activities with booking and registration capabilities, and integrated translation services.",
       tech: ["HTML", "CSS", "JavaScript", "React"],
       github: "https://explore-cambodia.netlify.app/",
-      image: "image_folder/project3.png"
+      mediaType: "video",
+      mediaSrc: "image_folder/project4/IMG_9963.MP4"
     }
   ];
 
@@ -44,10 +48,17 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div key={index} className="glass-card overflow-hidden flex flex-col h-full group">
             <div className="h-48 overflow-hidden relative">
-              <div className="absolute inset-0 bg-primary/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-300 z-10"></div>
-              {/* Fallback gradient if image not found */}
+              <div className="absolute inset-0 bg-primary/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-300 z-10 pointer-events-none"></div>
               <div className="w-full h-full bg-surface">
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" onError={(e) => { e.target.style.display = 'none'; }} />
+                {project.mediaType === 'image' && (
+                  <img src={project.mediaSrc} alt={project.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" onError={(e) => { e.target.style.display = 'none'; }} />
+                )}
+                {project.mediaType === 'video' && (
+                  <video src={project.mediaSrc} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" autoPlay loop muted playsInline />
+                )}
+                {project.mediaType === 'youtube' && (
+                  <iframe src={project.mediaSrc} className="w-full h-full grayscale group-hover:grayscale-0 transition-all duration-300 pointer-events-none" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+                )}
               </div>
             </div>
             

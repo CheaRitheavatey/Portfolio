@@ -18,7 +18,7 @@
     @apply bg-surface/50 backdrop-blur-sm border border-white/5 rounded-2xl transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_15px_rgba(6,182,212,0.2)] hover:-translate-y-1;
   }
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+    @apply text-primary font-bold;
   }
 }
 

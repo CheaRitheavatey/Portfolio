@@ -13,9 +13,9 @@ const Contact = () => {
     e.preventDefault();
     setStatus('sending');
 
-    // Make sure to replace with actual Web3Forms access key
     const formPayload = new FormData();
-    formPayload.append('access_key', 'YOUR_WEB3FORMS_ACCESS_KEY_HERE'); 
+    // Using access key from .env
+    formPayload.append('access_key', import.meta.env.VITE_WEB3FORMS_ACCESS_KEY); 
     formPayload.append('name', formData.name);
     formPayload.append('email', formData.email);
     formPayload.append('message', formData.message);

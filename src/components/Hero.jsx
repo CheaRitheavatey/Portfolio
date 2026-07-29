@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, Mail, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -24,6 +24,15 @@ const Hero = () => {
             className="px-6 py-3 rounded-lg bg-primary hover:bg-primary/90 text-background font-semibold flex items-center gap-2 transition-all hover:scale-105"
           >
             View Projects <ArrowRight size={18} />
+          </a>
+          <a 
+            href="image_folder/Ritheavatey_Chea_CV_v2.pdf" 
+            download
+            target="_blank"
+            rel="noreferrer"
+            className="px-6 py-3 rounded-lg border border-primary/50 text-primary hover:bg-primary/10 font-semibold flex items-center gap-2 transition-all hover:scale-105"
+          >
+            Download CV <Download size={18} />
           </a>
           <div className="flex items-center gap-4 ml-4">
             <a href="https://github.com/CheaRitheavatey" target="_blank" rel="noreferrer" className="p-3 glass-card text-gray-400 hover:text-primary transition-colors">
