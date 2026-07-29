@@ -14,8 +14,7 @@ const Contact = () => {
     setStatus('sending');
 
     const formPayload = new FormData();
-    // Using access key from .env
-    formPayload.append('access_key', import.meta.env.VITE_WEB3FORMS_ACCESS_KEY); 
+    formPayload.append('access_key', import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
     formPayload.append('name', formData.name);
     formPayload.append('email', formData.email);
     formPayload.append('message', formData.message);
@@ -25,7 +24,7 @@ const Contact = () => {
         method: 'POST',
         body: formPayload
       });
-      
+
       if (response.ok) {
         setStatus('success');
         setFormData({ name: '', email: '', message: '' });
@@ -42,9 +41,9 @@ const Contact = () => {
       <h2 className="text-3xl md:text-4xl font-bold mb-4 flex items-center justify-center gap-4">
         <span className="text-primary">03.</span> Get In Touch
       </h2>
-      
+
       <p className="text-gray-400 mb-10 max-w-xl mx-auto leading-relaxed">
-        I'm currently looking for new opportunities and my inbox is always open. 
+        I'm currently looking for new opportunities and my inbox is always open.
         Whether you have a question or just want to say hi, I'll try my best to get back to you!
       </p>
 
@@ -67,9 +66,9 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex flex-col gap-2">
             <label htmlFor="name" className="text-sm text-gray-300 font-medium">Name</label>
-            <input 
-              type="text" 
-              id="name" 
+            <input
+              type="text"
+              id="name"
               name="name"
               required
               minLength="2"
@@ -81,9 +80,9 @@ const Contact = () => {
           </div>
           <div className="flex flex-col gap-2">
             <label htmlFor="email" className="text-sm text-gray-300 font-medium">Email</label>
-            <input 
-              type="email" 
-              id="email" 
+            <input
+              type="email"
+              id="email"
               name="email"
               required
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -94,11 +93,11 @@ const Contact = () => {
             />
           </div>
         </div>
-        
+
         <div className="flex flex-col gap-2">
           <label htmlFor="message" className="text-sm text-gray-300 font-medium">Message</label>
-          <textarea 
-            id="message" 
+          <textarea
+            id="message"
             name="message"
             required
             minLength="10"
@@ -110,12 +109,12 @@ const Contact = () => {
           ></textarea>
         </div>
 
-        <button 
-          type="submit" 
+        <button
+          type="submit"
           disabled={status === 'sending'}
           className="w-full mt-2 py-4 bg-primary hover:bg-primary/90 disabled:bg-primary/50 text-background font-bold rounded-lg transition-all flex items-center justify-center gap-2"
         >
-          {status === 'sending' ? 'Sending...' : 'Send Message'} 
+          {status === 'sending' ? 'Sending...' : 'Send Message'}
           {!status && <Send size={18} />}
         </button>
 
