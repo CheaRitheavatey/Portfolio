@@ -31,7 +31,7 @@ const Projects = () => {
       title: "Cambodia Travel App Prototype",
       description: "An innovative travel app designed to help travelers discover unique and low-key spots in Cambodia often missed by tourists. It features a detailed local map, a curated list of activities with booking and registration capabilities, and integrated translation services.",
       tech: ["HTML", "CSS", "JavaScript", "React"],
-      github: "https://explore-cambodia.netlify.app/",
+      github: "https://chearitheavatey.github.io/routra_prototype/",
       mediaType: "video",
       mediaSrc: "image_folder/project4/IMG_9963.MP4"
     }
